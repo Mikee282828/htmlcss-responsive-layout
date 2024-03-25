@@ -227,3 +227,7 @@ h3{
         width:calc((100% - 2rem) / 3);
     }
 }
+/******************** get-started ****************/
+.txt-center{
+    text-align: center;
+}
