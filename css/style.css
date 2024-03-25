@@ -29,7 +29,7 @@
     margin-bottom:2rem;
 }
 /****************** flex column **************/
-.feature>.flex-container,.planning>.flex-container,.expert>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
+.feature>.flex-container,.planning>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
     flex-direction: column;
 }
 /****************** colors ***************/
@@ -57,6 +57,7 @@
 .purple{
     color: #9792e4;
 }
+
 /*********************** navbar ************************/
 nav.flex-container{
     width:100%;
@@ -89,7 +90,7 @@ nav.flex-container{
     .feature>.flex-container>.card:first-child{
         width:calc((100% * 2 / 3) - 1rem );
     }
-    .card{
+    .feature .card{
         width:calc((100% - 2rem) / 3)
     }
 
@@ -114,16 +115,93 @@ h1{
     margin-top:2rem;
     margin-bottom:2rem;
 }
-.card3{
+.card3,.card4{
     border:none;
     border-radius: 2rem;
     padding:2rem 1rem 2rem 1rem;
     margin-bottom:1rem;
     text-align: center;
 }
+[alt="planning"]{
+    width:100%;
+}
 @media screen and (min-width:769px){
     .planning>.flex-container{
         flex-direction:row;
         gap:2rem;
+        width:50%;
     }
 }   
+/*********************** expert ********************/
+.expert{
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.expert>.container{
+    text-align: center;
+}
+.expert .flex-container{
+    flex-direction: column;
+}
+[alt="experts"]{
+    object-fit: cover;
+    width:60%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom:1rem;
+}
+.card4{
+    align-items: center;
+    background-color: #9792e4;
+    margin-top:1rem;
+}
+h3{
+    padding-top:1rem;
+}
+@media screen and (min-width:480px){
+    .expert .flex-container{
+        flex-flow:wrap row;
+        gap:1rem;
+    }
+    .card4{
+        text-align: left;
+    }
+    .description{
+        width:calc((100% - 1rem)* 2 / 3);
+    }
+    [alt="experts"]{
+        width:calc((100% - 1rem) / 3);
+    }
+}
+@media screen and (min-width:769px){
+    .expert .flex-container{
+        gap:2rem;
+    }
+    .description{
+        width:calc((100% - 2rem)* 2 / 3);
+    }
+    [alt="experts"]{
+        width:calc((100% - 2rem) / 3);
+    }
+}
+/*********************** benefits ********************/
+.benefits{
+    background-color: #9792e4;
+}
+.benefits>h1{
+    text-align: center;
+}
+@media screen and (min-width:480px){
+    .benefits .flex-container{
+        flex-flow:wrap row ;
+        gap:1rem;
+    }
+    .benefits .card{
+        width:calc((100% - 1rem) / 2);
+    }
+}
+@media screen and (min-width:769px){
+    .benefits .card{
+        width:calc((100% - 2rem) / 3);
+    }
+}
