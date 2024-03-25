@@ -1,23 +1,61 @@
+/****************** common **************/
 *{
     box-sizing: border-box;
     font-family: sans-serif;
     padding:0;
     margin:0;
 }
-.blue{
-    background-color: #0084fd;
-}
-.light-blue{
-    background-color: #b5ddff;
-}
-.purple{
-    background-color: #9792e4;
-}
 .cta{
+    display: inline-block;
     padding:1rem 3rem 1rem 3rem;
+    border-radius:1rem;
+}
+.cta-next{
+    display: inline-block;
+    line-height: 2rem;
+    text-align:center;
+    height:2rem;
+    width:2rem;
+    border-radius:50%;
 }
 .flex-container{
     display: flex;
+}
+.container{
+    width:calc(100% - 4rem);
+    margin:auto;
+}
+.m2-bottom{
+    margin-bottom:2rem;
+}
+/****************** flex column **************/
+.feature>.flex-container,.planning>.flex-container,.expert>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
+    flex-direction: column;
+}
+/****************** colors ***************/
+.bkg-blue{
+    background-color: #0084fd;
+}
+.bkg-light-blue{
+    background-color: #b5ddff;
+}
+.bkg-purple{
+    background-color: #9792e4;
+}
+.bkg-white{
+    background-color: white;
+}
+.white{
+    color:white;
+}
+.blue{
+    color: #0084fd;
+}
+.light-blue{
+    color: #b5ddff;
+}
+.purple{
+    color: #9792e4;
 }
 /*********************** navbar ************************/
 nav.flex-container{
@@ -32,3 +70,60 @@ nav.flex-container{
 .nav-items{
     padding:1rem;
 }
+/*********************** feature ************************/
+.feature{
+    padding-top:2rem;
+    padding-bottom:4rem;
+}
+.card{
+    border:none;
+    border-radius: 1rem;
+    padding:2rem 1rem 2rem 1rem;
+    margin-bottom:1rem;
+}
+@media screen and (min-width:481px){
+    .feature>.flex-container{
+        flex-flow:wrap row;
+        gap:1rem;
+    }
+    .feature>.flex-container>.card:first-child{
+        width:calc((100% * 2 / 3) - 1rem );
+    }
+    .card{
+        width:calc((100% - 2rem) / 3)
+    }
+
+}
+@media screen and (min-width:769px){
+    .container{
+        width: 60%;
+    }
+}
+/*********************** planning ************************/
+.planning{
+    padding-top:4rem;
+    padding-bottom:4rem;
+    background-color: #9792e4;
+}
+.card2{
+    padding-top:4rem;
+    padding-bottom:2rem;
+    color:white;   
+}
+h1{
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.card3{
+    border:none;
+    border-radius: 2rem;
+    padding:2rem 1rem 2rem 1rem;
+    margin-bottom:1rem;
+    text-align: center;
+}
+@media screen and (min-width:769px){
+    .planning>.flex-container{
+        flex-direction:row;
+        gap:2rem;
+    }
+}   
