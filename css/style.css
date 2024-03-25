@@ -109,7 +109,6 @@ nav.flex-container{
 .card2{
     padding-top:4rem;
     padding-bottom:2rem;
-    color:white;   
 }
 h1{
     margin-top:2rem;
@@ -143,7 +142,7 @@ h1{
 .expert .flex-container{
     flex-direction: column;
 }
-[alt="experts"]{
+[alt="experts"],[alt="about"]{
     object-fit: cover;
     width:60%;
     aspect-ratio: 1;
@@ -202,6 +201,29 @@ h3{
 }
 @media screen and (min-width:769px){
     .benefits .card{
+        width:calc((100% - 2rem) / 3);
+    }
+}
+/*********************** About us ********************/
+
+.card5{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+@media screen and (min-width:480px){
+    .About-us .flex-container{
+        flex-flow:wrap row ;
+        gap:2rem;
+    }
+    .About-us .card5{
+        width:calc((100% - 2rem) / 2);
+    }
+}
+@media screen and (min-width:769px){
+    .About-us .card5:first-child{
+        width:calc((100% - 2rem) * 2 / 3);
+    }
+    .About-us .card5:last-child{
         width:calc((100% - 2rem) / 3);
     }
 }
