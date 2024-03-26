@@ -29,6 +29,13 @@
 .m2-bottom{
     margin-bottom:2rem;
 }
+.p3-left-right{
+    padding-left:3rem;
+    padding-right:3rem;
+}
+.p0-bottom{
+    padding-bottom:0;
+}
 .no-decoration{
     text-decoration: none;
 }
@@ -36,7 +43,7 @@ p{
     line-height: 2rem;
 }
 /****************** flex column **************/
-.feature>.flex-container,.planning>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
+.feature .flex-container,.planning>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
     flex-direction: column;
 }
 /****************** colors ***************/
@@ -102,16 +109,46 @@ nav>.flex-container{
     padding-top:2rem;
     padding-bottom:4rem;
 }
+.feature>.flex-container{
+    gap:1rem;
+}
 .card{
     border:none;
     border-radius: 1rem;
     padding:2rem 1rem 2rem 1rem;
-    margin-bottom:1rem;
+}
+.card.p0-bottom{
+    padding-bottom:0;
+}
+.card-elements{
+    width:100%;
+}
+.card-elements .cta{
+    width:80%;
+    text-align: center;
+}
+.card-elements-dx{
+    width:100%;
+}
+[alt="phone"]{
+    width:100%;
+}
+.feature>.flex-container>.flex-container{
+    justify-content: space-between;
+    gap:2rem;
+}
+.card>i{
+    font-size: 5rem;
+    color:#0084fd;
+    margin-bottom:2rem;
 }
 @media screen and (min-width:481px){
     .feature>.flex-container{
         flex-flow:wrap row;
         gap:1rem;
+    }
+    .card-elements .cta{
+        width:50%;
     }
     .feature>.flex-container>.card:first-child{
         width:calc((100% * 2 / 3) - 1rem / 3);
@@ -119,12 +156,28 @@ nav>.flex-container{
     .feature .card{
         width:calc((100% - 2rem) / 3)
     }
+    [alt="phone"]{
+        width:60%;
+    }
 
 }
 @media screen and (min-width:769px){
     .container{
         width: 60%;
     }   
+    .card-elements-sx .cta{
+        margin-bottom: 2rem;
+    }
+    .feature>.flex-container>.flex-container{
+        flex-direction: row;;
+    }
+    .card-elements-sx{
+        width:50%;
+    }
+    [alt="phone"]{
+        width:50%;
+        align-self:flex-end;
+    }
 }
 /*********************** planning ************************/
 .planning{
