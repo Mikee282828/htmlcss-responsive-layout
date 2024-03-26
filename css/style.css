@@ -88,7 +88,7 @@ nav.flex-container{
         gap:1rem;
     }
     .feature>.flex-container>.card:first-child{
-        width:calc((100% * 2 / 3) - 1rem );
+        width:calc((100% * 2 / 3) - 1rem / 3);
     }
     .feature .card{
         width:calc((100% - 2rem) / 3)
@@ -98,7 +98,7 @@ nav.flex-container{
 @media screen and (min-width:769px){
     .container{
         width: 60%;
-    }
+    }   
 }
 /*********************** planning ************************/
 .planning{
