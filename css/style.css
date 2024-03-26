@@ -24,6 +24,9 @@
 .m2-bottom{
     margin-bottom:2rem;
 }
+.m4-bottom{
+    margin-bottom:4rem;
+}
 .p3-left-right{
     padding-left:3rem;
     padding-right:3rem;
@@ -377,4 +380,9 @@ h3{
 .terms{
     background-color: rgb(51, 51, 51);
     color:white;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+u{
+    color: #9792e4;
 }
