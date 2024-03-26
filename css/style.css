@@ -7,8 +7,9 @@
 }
 .cta{
     display: inline-block;
-    padding:1rem 3rem 1rem 3rem;
+    padding:0.5rem;
     border-radius:1rem;
+    color: black;
 }
 .cta-next{
     display: inline-block;
@@ -27,6 +28,12 @@
 }
 .m2-bottom{
     margin-bottom:2rem;
+}
+.no-decoration{
+    text-decoration: none;
+}
+p{
+    line-height: 2rem;
 }
 /****************** flex column **************/
 .feature>.flex-container,.planning>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
@@ -59,18 +66,37 @@
 }
 
 /*********************** navbar ************************/
-nav.flex-container{
+nav{
     width:100%;
-    justify-content: space-between;
     background-color:#0084fd;
-    color:white;    
+    color:white; 
+}
+nav>.flex-container{
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-items-desktop{
     display:none;
 }
-.nav-items{
+.nav-items,.nav-items-hamb{
     padding:1rem;
 }
+.nav-item{
+    color:rgba(255, 255, 255, 0.662);
+}
+
+@media screen and (min-width:769px){
+    .nav-items-desktop{
+        display:flex;
+        align-items: center;
+        gap:1rem;
+    }
+    .nav-items-hamb{
+        display:none;
+    }
+}
+
+
 /*********************** feature ************************/
 .feature{
     padding-top:2rem;
