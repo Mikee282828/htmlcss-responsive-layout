@@ -18,6 +18,9 @@
     width:calc(100% - 4rem);
     margin:auto;
 }
+.m1-top{
+    margin-top:1rem;
+}
 .m2-bottom{
     margin-bottom:2rem;
 }
@@ -345,12 +348,29 @@ h3{
     }
 }
 /******************** get-started ****************/
+.get-started{
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
 .txt-center{
     text-align: center;
 }
+.orange{
+    color:rgb(253, 193, 95)
+}
+.get-started h1{
+    font-size: 3rem;
+}
+.get-started>.container>p:first-child{
+    color:rgba(255, 255, 255, 0.559);
+}
+.get-started .cta{
+    padding:1rem 4rem;
+    border-radius:4rem;
+}
 @media screen and (min-width:900px){
     .get-started .container,.terms .container{
-        width:30%;
+        width:40%;
     }
 }
 /**************** footer ************/
