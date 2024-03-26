@@ -92,7 +92,7 @@ nav>.flex-container{
     color:rgba(255, 255, 255, 0.662);
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:900px){
     .nav-items-desktop{
         display:flex;
         align-items: center;
@@ -142,7 +142,7 @@ nav>.flex-container{
     color:#0084fd;
     margin-bottom:2rem;
 }
-@media screen and (min-width:481px){
+@media screen and (min-width:650px){
     .feature>.flex-container{
         flex-flow:wrap row;
         gap:1rem;
@@ -161,7 +161,7 @@ nav>.flex-container{
     }
 
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:900px){
     .container{
         width: 60%;
     }   
@@ -208,12 +208,12 @@ nav>.flex-container{
     width:4rem;
     border-radius:50%;
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:650px){
     .h1-tablet-grow{
         font-size: 3rem;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:900px){
     .planning>.flex-container{
         flex-direction:row;
         gap:2rem;
@@ -250,7 +250,7 @@ nav>.flex-container{
 h3{
     padding-top:1rem;
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:650px){
     .expert .flex-container{
         flex-flow:wrap row;
         gap:1rem;
@@ -265,7 +265,7 @@ h3{
         width:calc((100% - 1rem) / 3);
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:900px){
     .expert .flex-container{
         gap:2rem;
     }
@@ -279,52 +279,76 @@ h3{
 /*********************** benefits ********************/
 .benefits{
     background-color: #9792e4;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.benefits .flex-container{
+    gap:1rem;
 }
 .benefits>h1{
     text-align: center;
 }
-@media screen and (min-width:480px){
+.benefits .cta{
+    width:40%;
+    text-align: center;
+}
+@media screen and (min-width:650px){
     .benefits .flex-container{
         flex-flow:wrap row ;
-        gap:1rem;
     }
     .benefits .card{
         width:calc((100% - 1rem) / 2);
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:900px){
     .benefits .card{
         width:calc((100% - 2rem) / 3);
     }
 }
 /*********************** About us ********************/
-
+.About-us{
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
 .card5{
     padding-top:2rem;
     padding-bottom:2rem;
 }
-@media screen and (min-width:480px){
+.quotation-image{
+    position: relative;
+    display: inline-block;
+    width:100%;
+}
+.quotation-image>i{
+    position:absolute;
+    font-size: 400%;
+    right:40%;
+    top:0;
+    color:#9792e4;
+}
+@media screen and (min-width:650px){
     .About-us .flex-container{
         flex-flow:wrap row ;
-        gap:2rem;
+        gap:4rem;
     }
-    .About-us .card5{
-        width:calc((100% - 2rem) / 2);
-    }
-}
-@media screen and (min-width:769px){
     .About-us .card5:first-child{
-        width:calc((100% - 2rem) * 2 / 3);
+        width:calc((100% - 4rem) * 2 / 3);
     }
     .About-us .card5:last-child{
-        width:calc((100% - 2rem) / 3);
+        width:calc((100% - 4rem) / 3);
+    }
+    [alt="about"]{
+        width:100%;
+    }
+    .quotation-image>i{
+        right:0;
     }
 }
 /******************** get-started ****************/
 .txt-center{
     text-align: center;
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:900px){
     .get-started .container,.terms .container{
         width:30%;
     }
