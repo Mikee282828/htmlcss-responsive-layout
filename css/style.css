@@ -31,8 +31,16 @@
 .no-decoration{
     text-decoration: none;
 }
+h1{
+    font-size: 2rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
 p{
     line-height: 2rem;
+}
+.font-larger{
+    font-size:larger;
 }
 /****************** flex column **************/
 .feature .flex-container,.planning>.flex-container,.benefits>.flex-container,.About-us>.flex-container,.get-started>.flex-container{
@@ -181,10 +189,6 @@ nav>.flex-container{
     padding-top:4rem;
     padding-bottom:2rem;
 }
-h1{
-    margin-top:2rem;
-    margin-bottom:2rem;
-}
 .card3,.card4{
     border:none;
     border-radius: 2rem;
@@ -204,12 +208,20 @@ h1{
     width:4rem;
     border-radius:50%;
 }
+@media screen and (min-width:480px){
+    .h1-tablet-grow{
+        font-size: 3rem;
+    }
+}
 @media screen and (min-width:769px){
     .planning>.flex-container{
         flex-direction:row;
         gap:2rem;
         width:50%;
         align-items: flex-end;
+    }
+    .h1-tablet-grow{
+        font-size: 2rem;
     }
 }   
 /*********************** expert ********************/
@@ -233,7 +245,7 @@ h1{
 .card4{
     align-items: center;
     background-color: #9792e4;
-    margin-top:1rem;
+    margin-top:2rem;
 }
 h3{
     padding-top:1rem;
